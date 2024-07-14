@@ -53,6 +53,11 @@
         text-align: right;
         min-width: 50px;
      }
+     .ww{
+        background-color: #ec1a23;
+        height: 40px;
+        text-align: center;
+     }
 /* .card p,.card h4 {
   
   color: #514D4D!important;
@@ -97,6 +102,28 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     width: 140px;
+
+}
+.specialoffers{
+
+font-size: 24px; 
+    font-weight: bold; 
+    text-transform: uppercase; 
+    margin-bottom: 10px; 
+    text-decoration: underline;
+    background-color: #ec1a23;
+    height: 50px;
+    text-align: center;
+}
+.ending{
+    background-color: #ec1a23;
+    text-align: center;
+    height: 30px;
+    
+}
+.cp{
+    font-size: 14px;
+    color: #ec1a23;
 }
 </style>
 
@@ -149,7 +176,7 @@ console.log(images)
 <div class="tap-image" id="tap_image">
     Tap image to close.
 </div>
-<div>
+<div >
     <input type="button" class="nav_buttons" value="Breakfast" onclick="document.getElementById('breakfast').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Dinner Chicken" onclick="document.getElementById('dinner_chicken').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Dinner Beef" onclick="document.getElementById('dinner_beef').scrollIntoView();"/>
@@ -158,12 +185,104 @@ console.log(images)
     <input type="button" class="nav_buttons" value="Appetizers" onclick="document.getElementById('appetizers').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Side Orders" onclick="document.getElementById('side_orders').scrollIntoView();"/>
     <input type="button" class="nav_buttons" value="Drinks" onclick="document.getElementById('drinks').scrollIntoView();"/>
+    <input type="button" class="nav_buttons" value="Mini Bites" onclick="document.getElementById('mini').scrollIntoView();"/>
+</div>
+<div class="specialoffers">Offers!!</div>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepito.jpg?v=1.0.0 " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>2 Pepito sandwich + Fries + 2 Pepsi</br>
+    ٢ ساندويتش بيبيتو + بطاطس + ٢ بيبسي
+    <br>
+    <br>
+    <div class="cp">Calories: 940, Protein: 57 grams</div>
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>1,000,000 L.L</b></p>
+</td>
+</tr>
+</table>
+
 
 </div>
+    </td>
+</tr>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/crispy_meal.jpg?v=1.0.0 " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>Crispy 6 pieces + Fries + Garlic + Cheddar + BBQ + Pickles + Caesar salad</br>
+    ٦ قطع مقرمشة + بطاطس مقلية + ثوم + جبن شيدر + صلصة باربيكيو + خيار مخلل + سلطة سيزر
+    <br>
+    <br>
+    <div class="cp"> Calories: 1,330, Protein: 69 grams</div>
+   
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>1,000,000 L.L</b></p>
+</td>
+</tr>
+</table>
+
+
+</div>
+    </td>
+</tr>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/pepito.jpg?v=1.0.0" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>Pepito + Fries + Pepsi</br>
+     ساندويتش بيبيتو + بطاطس +  بيبسي
+    <br>
+    <br>
+    <div class="cp"> Calories: 600, Protein: 30 grams</div>
+   
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>600,000 L.L</b></p>
+</td>
+</tr>
+</table>
+
+
+</div>
+    </td>
+</tr>
+
 <table>
     <tr>
         <td>
-            <h2 id="breakfast">
+            <h2 id="breakfast" class="ww">
                 Breakfast
             </h2>
         </td>
@@ -180,6 +299,9 @@ console.log(images)
 <div class="container">
     <h4><b>JIBNEH</br>
         جبنة
+        <br>
+        <br>
+        <div class="cp">Calories: 250, Protein: 17 grams</div>
         
 </b></h4> 
      
@@ -207,8 +329,10 @@ console.log(images)
 <div class="container">
     <h4><b>ZAATAR</br>
         زعتر
-        
-        
+        <br>
+        <br>
+        <div class="cp">Calories: 10, Protein: 2 grams</div>
+         
 </b></h4> 
      
   </div>
@@ -235,8 +359,10 @@ console.log(images)
 <div class="container">
     <h4><b>JIBNEH & ZAYTOUN </br>
         جبنة و زيتون 
-        
-        
+        <br>
+        <br>
+        <div class="cp"> Calories: 250, Protein: 17 grams</div>
+       
 </b></h4> 
      
   </div>
@@ -263,7 +389,9 @@ console.log(images)
 <div class="container">
     <h4><b>MARTADELLA & JIBNEH</br>
         جبنة و مرتديلا
-        
+        <br>
+        <br>
+        <div class="cp">Calories: 240, Protein: 17 grams</div>
         
 </b></h4> 
      
@@ -291,6 +419,9 @@ console.log(images)
 <div class="container">
     <h4><b>PIZZA</br>
         بيتزا
+        <br>
+        <br>
+        <div class="cp">Calories: 350, Protein: 24 grams</div>
         
 </b></h4> 
      
@@ -320,7 +451,10 @@ console.log(images)
 <div class="container">
     <h4><b>CHOCOLATE</br>
         شوكولا
-        
+        <br>
+        <br>
+        <div class="cp">    Calories: 300, Protein: 8 grams</div>
+    
 </b></h4> 
      
   </div>
@@ -347,7 +481,10 @@ console.log(images)
 <div class="container">
     <h4><b>NUTELLA SANDWICH</br>
         نيوتيلا
-        
+        <br>
+        <br>
+        <div class="cp"> Calories: 350, Protein: 12 grams</div>
+       
 </b></h4> 
      
   </div>
@@ -376,10 +513,15 @@ console.log(images)
     <h4><b>TURKEY & CHEESE</br>
         حبش و جبنة
         
+        
 </b></h4> 
 <p>
     mayo, corn, lettuce, pickels</br>
     مايونيز, ذرة, خس, كبيس
+    <br>
+    <br>
+    <div class="cp"> Calories: 240, Protein: 22 grams</div>
+       
 </p>
      
   </div>
@@ -411,6 +553,10 @@ console.log(images)
      <p>
         tomato, cucumber, lettuce, olive oil</br>
          بندورة, خيار, خس, زيت زيتون 
+         <br>
+         <br>
+         <div class="cp">Calories: 350, Protein: 22 grams</div>
+         
     </p>
   </div>
 </td>
@@ -437,11 +583,16 @@ console.log(images)
 <div class="container">
     <h4><b>LABNEH</br>
         لبنة
+        <br>
         
 </b></h4> 
      <p>
         oregano, tomato, cucmber, olive, lettuce, olive oil</br>
         اوريغانو, بندورة, خيار, زيتون, خس, زيت زيتون
+        <br>
+        <br>
+        <div class="cp">Calories: 150, Protein: 9 grams</div>
+        
      </p>
   </div>
 </td>
@@ -470,6 +621,10 @@ console.log(images)
         <p>
             mayo, turkey, tomato, pickles</br>
             مايونيز, حبش, بندورة, كبيس
+            <br>
+            <br>
+            <div class="cp">Calories: 240, Protein: 18 grams</div>
+            
         </p>
 </b></h4> 
      
@@ -501,7 +656,7 @@ console.log(images)
 
     <tr>
         <td>
-            <h2 id="dinner_chicken">
+            <h2 id="dinner_chicken" class="ww">
                 Dinner Chicken
             </h2>
         </td>
@@ -521,6 +676,10 @@ console.log(images)
 </b></h4> 
     <p>mushroom, onions, green peppers, mozzarella cheese, guacamole sauce, lettuce, mayo</br>
 فطر ، بصل ، فليفلة خضراء ، جبنة موزاريلا ، صلصة جواكامولي ، خس ، مايونيز
+<br>
+<br>
+<div class="cp">Calories: 350, Protein: 24 grams</div>
+
 </p> 
   </div>
 </td>
@@ -552,6 +711,10 @@ console.log(images)
         sauce
         خضراء ، جبنة</br>
 فطر ، بصل ، فليفلة خضراء ، جبنة موزاريلا ، صلصة جواكامولي ، خس ، مايونيز, صوص حار
+<br>
+<br>
+<div class="cp">Calories: 360, Protein: 24 grams</div>
+
 </p> 
   </div>
 </td>
@@ -582,7 +745,11 @@ console.log(images)
 </b></h4> 
     <p>
         lettuce, pickles, mayo, chips, BBQ sauce</br>
-        خس ، كبيس ، مايونيز ، شيبس ، صوص باربيكيو        
+        خس ، كبيس ، مايونيز ، شيبس ، صوص باربيكيو   
+        <br>
+        <br>
+        <div class="cp">Calories: 350, Protein: 27 grams</div>
+             
 </p> 
   </div>
 </td>
@@ -613,7 +780,10 @@ console.log(images)
         <p>
             lettuce, pickles, mayo, corn, soy sauce, mozzarella cheese</br>
 خس ، كبيس ، مايونيز ، ذرة ، صلصة الصويا ، جبنة موزاريلا
-        
+        <br>
+        <br>
+        <div class="cp">   Calories: 350, Protein: 24 grams</div>
+     
     </p> 
       </div>
     </td>
@@ -646,6 +816,9 @@ console.log(images)
             <p>
                 lettuce, pickles, mayo</br>
 خس ، كبيس ، مايونيز
+        <br>
+        <br>
+        <div class="cp">Calories: 370, Protein: 24 grams</div>
         
         </p> 
           </div>
@@ -678,7 +851,10 @@ console.log(images)
                 <p>
                     turkey, mozzarella cheese,chips, mustard, ketchup, mayo, BBQ sauce, Guasacaca sauce, lettuce</br>
 حبش ، جبنة موزاريلا ، شيبس، خردل ، كاتشب ، مايونيز ، صوص باربيكيو ، صلصة جواساكاكا ، خس
-        
+        <br>
+        <br>
+        <div class="cp">    Calories: 340, Protein: 27 grams</div>
+    
             </p> 
               </div>
             </td>
@@ -712,7 +888,10 @@ console.log(images)
                         <p>
                             cheddar, chips, mayo, bbq</br>
                             شيدر ، شيبس ، مايونيز ، باربيكيو 
-    
+                            <br>
+                            <br>
+                            <div class="cp">Calories: 340, Protein: 25 grams</div>
+                            
                     </p> 
                       </div>
                     </td>
@@ -728,7 +907,7 @@ console.log(images)
                 </tr>
             <tr>
                 <td>
-                    <h2 id="dinner_beef">
+                    <h2 id="dinner_beef" class="ww">
                         Dinner Beef
                     </h2>
                 </td>
@@ -752,6 +931,9 @@ console.log(images)
                     <p>
                         tomato, pickles, green peppers, mayo mustard</br>
 بندورة ، كبيس ، فليفلة, مايونيز خردل 
+        <br>
+        <br>
+        <div class="cp">Calories: 350, Protein: 23 grams</div>
         
                 </p> 
                   </div>
@@ -784,7 +966,10 @@ console.log(images)
                         <p>
                             onions, mushroom, green peppers, mozzarella cheese, lettuce, mayo</br>
 بصل ، فطر ، فليفلة خضراء ، جبنة موزاريلا ، خس ، مايونيز
-        
+        <br>
+        <br>
+        <div class="cp"> Calories: 400, Protein: 27 grams</div>
+       
                     </p> 
                       </div>
                     </td>
@@ -816,6 +1001,9 @@ console.log(images)
                             <p>
                                 Grilled onions, grilled tomato, pickles, mayo</br>
 بصل مشوي، بندورة مشوية، كبيس، مايونيز
+        <br>
+        <br>
+        <div class="cp">Calories: 350, Protein: 27 grams</div>
         
                         </p> 
                           </div>
@@ -849,7 +1037,10 @@ console.log(images)
                             <p>
                                 onions, mushroom, green peppers, mozzarella, cheddar, lettuce, spicy croissanji mix</br>
                                 بصل ، فطر ، فليفلة خضراء ، موتزاريلا ، شيدر ، خس ، خلطة كرواسونجي الحارة
-        
+                                <br>
+                                <br>
+                                <div class="cp">Calories: 350, Protein: 25 grams</div>
+                                
                         </p> 
                           </div>
                         </td>
@@ -866,7 +1057,7 @@ console.log(images)
                 
                         <tr>
                             <td>
-                                <h2 id="burgers">
+                                <h2 id="burgers" class="ww">
                                     Burgers
                                 </h2>
                             </td>
@@ -892,7 +1083,10 @@ console.log(images)
                                     <p>
                                         iceberg, tomato, onions, cheddar cheese, mushroom, mustard, ketchup, bbq, pickles</br>
 خس ، بندورة ، بصل ، جبنة شيدر ، فطر ، خردل ، كاتشب ، باربيكيو ، كبيس
-        
+                                            <br>
+                                            <br>
+                                            <div class="cp">Calories: 350, Protein: 27 grams</div>
+                                            
                                 </p> 
                                   </div>
                                 </td>
@@ -926,7 +1120,10 @@ console.log(images)
                 <p>
                     iceberg, carmalized onions, onion rings, mozzarella burger, bbq sauce, special croissanji mix </br>
                     خس ، بصل مكرمل ، حلقات بصل ، موتزاريلا برجر ، صوص باربيكيو ، خلطة كرواسونجي الخاصة
-
+                        <br>
+                        <br>
+                        <div class="cp">Calories: 550, Protein: 43 grams</div>
+                        
             </p> 
               </div>
             </td>
@@ -967,7 +1164,10 @@ console.log(images)
 <p>
     5 crispy strips, fries box, cheddar dip,cheddar,barbecue,garlic  </br>
      شرائح كرسبي 5، علبة بطاطا، صوص شيدر، شيدر، باربكيو، ثوم
-
+            <br>
+            <br>
+            <div class="cp">Calories: 600, Protein: 30 grams</div>
+            
 </p> 
 </div>
 </td>
@@ -986,7 +1186,7 @@ console.log(images)
 
     <tr>
         <td>
-            <h2 id="appetizers">
+            <h2 id="appetizers"class="ww">
                 Appetizers
             </h2>
         </td>
@@ -1009,7 +1209,10 @@ console.log(images)
                 <p>
                     Cucumber, Tomato, Lettuce, Bell pepper, Onion, Olive, Feta cheese, Olive oil, Lemon, Oregano </br>
                 خيار، بندورة خس ،فليفلة ،بصل ،زيتون ،جبنة فيتا، زيت، زيتون، حامض اوريغانو
-
+                    <br>
+                    <br>
+                    <div class="cp"> Calories: 250, Protein: 14 grams</div>
+                   
             </p> 
               </div>
             </td>
@@ -1042,7 +1245,11 @@ console.log(images)
             </b></h4> 
                 <p>
                    Lettuce, Chicken breast, Parmesan cheese, Croutons, Caesar dressing</br>
-              خس، صدر دجاج، جبنة الباميزان، توست ، صوص السيزر
+                   خس، صدر دجاج، جبنة الباميزان، توست ، صوص السيزر
+                   <br>
+                   <br>
+                   <div class="cp"> Calories: 350, Protein: 30 grams</div>
+                  
             </p> 
               </div>
             </td>
@@ -1069,7 +1276,9 @@ console.log(images)
 <td>
 <div class="container">
     <h4><b>FRIES BOX</br>
-    
+        <br>
+        <div class="cp"> Calories: 260, Protein: 3 grams</div>
+       
         
 </b></h4> 
      
@@ -1096,7 +1305,8 @@ console.log(images)
 <td>
 <div class="container">
     <h4><b>WEDGES</br>
-    
+        <div class="cp"> Calories: 300, Protein: 4 grams</div>
+       
         
 </b></h4> 
      
@@ -1123,7 +1333,8 @@ console.log(images)
 <td>
 <div class="container">
     <h4><b>ONION RINGS BOX</br>
-    
+        <div class="cp">  Calories: 250, Protein: 3 grams</div>
+      
         
 </b></h4> 
      
@@ -1150,7 +1361,9 @@ console.log(images)
 <td>
 <div class="container">
     <h4><b>LOADED FRIES</br>
-    
+        <br>
+        <div class="cp">Calories: 550, Protein: 15 grams</div>
+        
         
 </b></h4> 
      
@@ -1178,7 +1391,9 @@ console.log(images)
 <td>
 <div class="container">
     <h4><b>CORNDOG</br>
-    
+        <br>
+        <div class="cp">Calories: 250, Protein: 6 grams</div>
+        
         
 </b></h4> 
      
@@ -1198,7 +1413,7 @@ console.log(images)
     
     <tr>
         <td>
-            <h2 id="side_orders">
+            <h2 id="side_orders"class="ww">
                 Side Orders
             </h2>
         </td>
@@ -1216,7 +1431,9 @@ console.log(images)
 <div class="container">
     <h4><b>CHEDDAR DIP</br>
         شيدر
-        
+        <br>
+        <div class="cp"> Calories: 40</div>
+       
         
 </b></h4> 
      
@@ -1244,7 +1461,9 @@ console.log(images)
 <div class="container">
     <h4><b>BBQ DIP</br>
         باربيكيو 
-        
+        <br>
+        <div class="cp"> Calories: 40</div>
+       
         
 </b></h4> 
      
@@ -1272,6 +1491,8 @@ console.log(images)
 <div class="container">
     <h4><b>MAYO DIP</br>
         مابونيز
+        <br>
+        <div class="cp">Calories: 40</div>
         
         
 </b></h4> 
@@ -1300,6 +1521,8 @@ console.log(images)
 <div class="container">
     <h4><b>MAYO MUSTARD DIP</br>
         مايونيز مع خردل
+        <br>
+        <div class="cp">Calories: 40</div>
         
 </b></h4> 
      
@@ -1329,7 +1552,9 @@ console.log(images)
 <div class="container">
     <h4><b>GUACAMOLE</br>
      جواكامولي
-        
+     <br>
+     <div class="cp">Calories: 40</div>
+     
 </b></h4> 
      
   </div>
@@ -1359,7 +1584,9 @@ console.log(images)
 <div class="container">
     <h4><b>PESTO</br>
      صوص الحبق
-        
+     <br>
+     <div class="cp">Calories: 40</div>
+     
 </b></h4> 
      
   </div>
@@ -1378,7 +1605,7 @@ console.log(images)
     
     <tr>
         <td>
-            <h2 id="drinks">
+            <h2 id="drinks" class="ww">
                 Drinks
             </h2>
         </td>
@@ -1550,7 +1777,351 @@ console.log(images)
 </div>
         </td>
     </tr>
-    
+    <tr>
+        <td>
+            <h2 id="mini"class="ww">
+                Mini Bites (5 PCS/Portion)
+            </h2>
+        </td>
+    </tr>
+    <tr>
+        <td>
+           <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+    <h4><b>TURKEY & CHEESE</br>
+        حبش و جبنة
+        
+</b></h4> 
+     
+  </div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
 </table>
+
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>GRILLED HALLOUM</br>
+    حلوم مشوي
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>LABNEH</br>
+    لبنة
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>OMLETTE</br>
+    بيض
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>FAJITA</br>
+    فاهيتا
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>SPICY FAJITA</br>
+    فاهيتا
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>CHICKEN BARBECUE</br>
+    تشكن باربكيو
+
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>CHICKEN SUB</br>
+    تشكن ساب
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>CHICKEN CATALINA</br>
+    تشكن كاتالينا
+
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>PEPITO</br>
+    بيبيتو
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg" alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>BONELESS BBQ</br>
+    بونلس باربكيو
+
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>SOJOK</br>
+    سجق
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>PHILADELPHIA</br>
+    فلدلفيا
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>KAFTA</br>
+    كفتة
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+<tr>
+    <td>
+       <div class="card">
+<table>
+<tr>
+<td>
+<img class="img" src="images/minibtes.jpeg " alt="Cheese" >
+</td>
+<td>
+<div class="container">
+<h4><b>CROISSANJI CHEEZY SPICY BEEF</br>
+    كرواسونجي تشيزي سبايسي بيف
+
+    
+</b></h4> 
+ 
+</div>
+</td>
+<td>
+<p><b>5 $</b></p>
+</td>
+</tr>
+</table>
+
+
+</table>
+<div class="ending">Every Dish is a Work of Art;choose your masterpiece</div>
   </body>
 </html>
